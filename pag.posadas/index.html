@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posadas Tech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #3b0b61;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            color: #e0e0e0;
+        }
+
+        header .logo-container img {
+            width: 150px;
+            height: auto;
+            z-index: 1;
+        }
+
+        header h1 {
+            color: #b68fff;
+            font-size: 2.5em;
+            position: relative;
+            z-index: 1;
+        }
+
+        header::before {
+            content: "";
+            background: url('logo-icon.png') no-repeat center;
+            background-size: 300px;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section h2 {
+            color: #b68fff;
+            font-size: 2em;
+            border-bottom: 2px solid #3b0b61;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: #3b0b61;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-info p, .services p {
+            margin: 5px 0;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .service-item {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(33% - 40px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-item h3 {
+            color: #b68fff;
+            font-size: 1.5em;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #e0e0e0;
+            background-color: #3b0b61;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #b68fff;
+            transform: scale(1.05);
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .service-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/Imagen de WhatsApp 2024-11-11 a las 19.46.50_20229ecf.jpg">
+            <h1>Posadas Tech</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sección Nosotros -->
+        <section class="section">
+            <h2>Nosotros</h2>
+            <p>En Posadas Tech, combinamos la tecnología de drones con software de última generación para promover el turismo en la hermosa provincia de Misiones. Nuestro objetivo es capturar imágenes y datos que ayuden a los turistas a conocer y explorar cada rincón de la región de manera innovadora y segura.</p>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section class="section">
+            <h2>Servicios</h2>
+            <div class="services">
+                <div class="service-item">
+                    <h3>Fotografía Aérea</h3>
+                    <p>Capturamos imágenes aéreas de alta calidad para mostrar la belleza de Misiones desde una nueva perspectiva.</p>
+                    <a href="#" class="button">Saber más</a>
+                </div>
+                <div class="service-item">
+                    <h3>Mapeo y Análisis</h3>
+                    <p>Utilizamos drones para crear mapas detallados y analizar datos geográficos que apoyan el desarrollo turístico.</p>
+                    <a href="#" class="button">Saber más</a>
+                </div>
+                <div class="service-item">
+                    <h3>Videos Promocionales</h3>
+                    <p>Producimos videos promocionales para destacar los lugares turísticos de Misiones, brindando una experiencia visual única.</p>
+                    <a href="#" class="button">Saber más</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section class="section contact-info">
+            <h2>Contacto</h2>
+            <p><strong>Teléfono:</strong> +54 3764 123456</p>
+            <p><strong>Email:</strong> contacto@posadastech.com</p>
+            <p><strong>Dirección:</strong> Av. Mitre 1234, Posadas, Misiones, Argentina</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Posadas Tech. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
